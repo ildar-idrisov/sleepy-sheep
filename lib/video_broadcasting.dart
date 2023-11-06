@@ -262,24 +262,24 @@ class _VideoBroadcastingState extends State<VideoBroadcasting> {
         //  _remoteServerIP = ip;
         //  saveToStorage('serverIP', _remoteServerIP!);
         //}
-        showDialog(
-          context: context,
-          builder: (context) {
-            return AlertDialog(
-              title: const Text("First time connection"),
-              content: const Text(
-                  "It looks like you're adding a new device to the network. We'll quickly find and remember your child's device to make future connections a breeze!"),
-              actions: <Widget>[
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: const Text('Ok'),
-                ),
-              ],
-            );
-          },
-        );
+        Future.microtask(() => showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  title: const Text("First time connection"),
+                  content: const Text(
+                      "It looks like you're adding a new device to the network. We'll quickly find and remember your child's device to make future connections a breeze!"),
+                  actions: <Widget>[
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: const Text('Ok'),
+                    ),
+                  ],
+                );
+              },
+            ));
         List<Host> potentialServers = await discoverServices();
         for (Host host in potentialServers) {
           status = await checkSignalServer(
@@ -296,24 +296,24 @@ class _VideoBroadcastingState extends State<VideoBroadcasting> {
       }
     }
     if (_remoteServerIP == "") {
-      showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            title: const Text("Incorrect network"),
-            content: const Text(
-                "You need to be on the same network as the child's phone"),
-            actions: <Widget>[
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: const Text('Ok'),
-              ),
-            ],
-          );
-        },
-      );
+      Future.microtask(() => showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: const Text("Incorrect network"),
+                content: const Text(
+                    "You need to be on the same network as the child's phone"),
+                actions: <Widget>[
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: const Text('Ok'),
+                  ),
+                ],
+              );
+            },
+          ));
     }
     dprint("remoteServerIP: $_remoteServerIP");
   }
