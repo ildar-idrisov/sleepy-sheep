@@ -1,6 +1,6 @@
 {
-    "name": "baby_camera",
-    "short_name": "baby_camera",
+    "name": "sleepy_sheep",
+    "short_name": "sleepy_sheep",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

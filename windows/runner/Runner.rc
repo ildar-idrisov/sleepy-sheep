@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "baby_camera" "\0"
+            VALUE "FileDescription", "sleepy_sheep" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "baby_camera" "\0"
+            VALUE "InternalName", "sleepy_sheep" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "baby_camera.exe" "\0"
-            VALUE "ProductName", "baby_camera" "\0"
+            VALUE "OriginalFilename", "sleepy_sheep.exe" "\0"
+            VALUE "ProductName", "sleepy_sheep" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
