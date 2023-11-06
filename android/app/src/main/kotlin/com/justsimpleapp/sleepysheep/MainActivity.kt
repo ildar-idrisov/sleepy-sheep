@@ -1,4 +1,4 @@
-package com.justsimpleapp.sleepy_sheep
+package com.justsimpleapp.sleepysheep
 
 import io.flutter.embedding.android.FlutterActivity
 
