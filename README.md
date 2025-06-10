@@ -1,6 +1,10 @@
-# sleepy_sheep
+# Sleepy Sheep
 
-A new Flutter project.
+Sleepy Sheep is a cross-platform Flutter mobile baby monitor app that streams live video with low-latency H.264 encoding over WebRTC for secure, on-the-go monitoring.
+
+Designed for personal use, it transforms any supported device into a reliable baby monitor, allowing parents to keep an eye on their little ones from anywhere.
+
+By leveraging WebRTC’s built-in DTLS-SRTP encryption, Sleepy Sheep ensures that all video streams are private and secure, offering peace of mind for modern families.
 
 ## Getting Started
 
